@@ -1,5 +1,7 @@
 #Примеры построения графиков  
 import tkinter as tk
+#импорт внешних файлов
+import chart1
 
 # Функция закрытия окна
 def do_close():
@@ -15,7 +17,7 @@ lbl_title = tk.Label(text="Примеры построения графиков"
 lbl_title.place(x=55, y=25)
 
 # Добавление кнопки и метки для графика 1
-btn_chart1 = tk.Button(window, text="График 1", font = ('Helvetica', 10, 'bold'))
+btn_chart1 = tk.Button(window, text="График 1", font = ('Helvetica', 10, 'bold'), command=chart1.plot_chart)
 btn_chart1.place(x=40, y=115, width=90, height=30)
 
 lbl_chart1 = tk.Label(text="График синуса matplotlib")
