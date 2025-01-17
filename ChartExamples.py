@@ -2,6 +2,7 @@
 import tkinter as tk
 #импорт внешних файлов
 import chart1
+import chart2
 
 # Функция закрытия окна
 def do_close():
@@ -25,7 +26,7 @@ lbl_chart1.place(x=170, y=122)
 
 
 # Добавление кнопки и метки для графика 2
-btn_chart2 = tk.Button(window, text="График 2", font = ('Helvetica', 10, 'bold'))
+btn_chart2 = tk.Button(window, text="График 2", font = ('Helvetica', 10, 'bold'), command=chart2.plot_chart)
 btn_chart2.place(x=40, y=165, width=90, height=30)
 
 lbl_chart2 = tk.Label(text="Нормальное распределение")
