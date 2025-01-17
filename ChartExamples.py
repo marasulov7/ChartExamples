@@ -14,6 +14,13 @@ window.title("Примеры построения графиков")
 lbl_title = tk.Label(text="Примеры построения графиков", font=('Helvetica', 16, 'bold'), fg='#0000cc') #fg-цвет текста
 lbl_title.place(x=55, y=25)
 
+# Добавление кнопки и метки для графика 1
+btn_chart1 = tk.Button(window, text="График 1", font = ('Helvetica', 10, 'bold'))
+btn_chart1.place(x=40, y=115, width=90, height=30)
+
+lbl_chart1 = tk.Label(text="График синуса matplotlib")
+lbl_chart1.place(x=170, y=122)
+
 # Добавление кнопки закрытия программы
 btnClose = tk.Button(window, text = "Закрыть", font = ('Helvetica', 10, 'bold'), command=do_close) # шрифт, размер, жирный+вызов ф закр окна
 btnClose.place(x=330, y=400, width=90, height=30) #функция place размещает элемент в нужной точке+ширина и высота эл-та
