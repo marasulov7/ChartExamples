@@ -3,7 +3,7 @@ import tkinter as tk
 #импорт внешних файлов
 import chart1
 import chart2
-
+import chart3
 # Функция закрытия окна
 def do_close():
     window.destroy()
@@ -40,10 +40,10 @@ lbl_chart3 = tk.Label(text="Нормальное распределение - 3 
 lbl_chart3.place(x=170, y=222)
 
 # Добавление кнопки и метки для графика 4
-btn_chart4 = tk.Button(window, text="График 4", font = ('Helvetica', 10, 'bold'), command=chart2.plot_chart)
+btn_chart4 = tk.Button(window, text="График 4", font = ('Helvetica', 10, 'bold'), command=chart3.plot_chart)
 btn_chart4.place(x=40, y=265, width=90, height=30)
 
-lbl_chart4 = tk.Label(text="Описание графика")
+lbl_chart4 = tk.Label(text="Гисторгамма seaborn")
 lbl_chart4.place(x=170, y=272)
 
 # Добавление кнопки и метки для графика 5
