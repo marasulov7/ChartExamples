@@ -11,7 +11,7 @@ def plot_chart():
     #DataFrame — основной тип данных в Pandas, вокруг которого строится вся работа
     df_normal_a = pd.DataFrame(data = normal_data_a, columns = ['score']).assign(group = 'Group A')
     
-    sns.histplot(data = df_normal_a, x='score', bins=50)
+    sns.histplot(data = df_normal_a, x='score', bins=50, kde=True)
 
     
     plt.show()
