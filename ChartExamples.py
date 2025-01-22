@@ -47,10 +47,10 @@ lbl_chart4 = tk.Label(text="Гисторгамма seaborn")
 lbl_chart4.place(x=170, y=272)
 
 # Добавление кнопки и метки для графика 5
-btn_chart5 = tk.Button(window, text="График 5", font = ('Helvetica', 10, 'bold'), command=chart2.plot_chart)
+btn_chart5 = tk.Button(window, text="График 5", font = ('Helvetica', 10, 'bold'), command=chart3.plot_chart2)
 btn_chart5.place(x=40, y=315, width=90, height=30)
 
-lbl_chart5 = tk.Label(text="Описание графика")
+lbl_chart5 = tk.Label(text="Сдвоенная гисторгамма seaborn")
 lbl_chart5.place(x=170, y=322)
 
 # Добавление кнопки и метки для графика 6
